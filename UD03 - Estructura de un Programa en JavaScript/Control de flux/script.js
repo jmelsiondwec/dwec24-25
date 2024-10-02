@@ -2,7 +2,6 @@
 
 // console.log("Tu número es la raíz cuadrada de " + numero * numero);
 
-
 // Condicional
 // let numero = Number(prompt("Elije tu número:"));
 
@@ -55,9 +54,58 @@
 // console.log(a + " elevado a " + n + " = " + resultado);
 
 // DO WHILE
-let nombre;
-do {
-  nombre = prompt("¿Quíen eres?");
-} while (!nombre);
+// let nombre;
+// do {
+//   nombre = prompt("¿Quíen eres?");
+// } while (!nombre);
 
-console.log("Nombre: " + nombre);
+// console.log("Nombre: " + nombre);
+
+// BUCLES FOR
+// let numero = 2;
+// console.log("Antes del bucle: " + numero);
+// for(numero = 0; numero <= 12; numero++) {
+//   console.log(numero);
+// }
+// console.log("Después del bucle: " + numero);
+
+// for(let numero = 20; numero < 100; numero++) {
+//   if(numero % 5 != 0) {
+//     continue;
+//   }
+//   console.log(numero);
+// }
+
+// SWITCH - CASE
+// let pregunta = prompt("¿Qué tiempo hace?");
+// switch (pregunta) {
+//   case "lluvioso":
+//     console.log("¡Coge un paraguas!");
+//     break;
+//   case "soleado":
+//     console.log("Lleva ropa ligera.");
+//   case "nublado":
+//     console.log("Puedes salir a la calle.");
+//     break;
+//   default:
+//     console.log("¡Tiempo desconocido!");
+//     break;
+// }
+
+/*  Ejercicio 1
+  Escribe un bucle que realice siete llamadas a
+  console.log para mostrar la siguiente figura:
+  #
+  ##
+  ###
+  ####
+  #####
+  ######
+  #######
+*/
+
+
+
+
+
+
