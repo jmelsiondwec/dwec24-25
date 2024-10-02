@@ -77,8 +77,8 @@
 // }
 
 // SWITCH - CASE
-// let pregunta = prompt("¿Qué tiempo hace?");
-// switch (pregunta) {
+//let pregunta = prompt("¿Qué tiempo hace?");
+// switch (prompt("¿Qué tiempo hace?")) {
 //   case "lluvioso":
 //     console.log("¡Coge un paraguas!");
 //     break;
@@ -103,6 +103,40 @@
   ######
   #######
 */
+ //let cadena = "hola";
+ //console.log(cadena.length);
+
+/*  Ejercicio 2
+  Escribe un programa que use console.log para imprimir
+  todos los números del 1 al 100, con dos excepciones:
+  - Para los números que sean divisibles por 3, imprime:
+  "Jander".
+  - Para los número divisibles por 5 (y no por 3), imprime:
+  "Clander".  
+*/
+/*  Ejercicio 2 - Extension Pack
+  Modifica tu programa para imprimir "JanderClander" para los
+  números que sean divisibles por 3 y 5 (y sigue imprimiendo
+  "Jander" o "Clander" para los números que son divisibles solo
+  por uno de esos casos).
+*/
+
+/*  Ejercicio 3
+  Escribe un programa que cree una cadena que represente un tablero
+  de 8 x 8, usando caracteres de salto de línea para separar las líneas.
+  En cada posición del tablero hay un carácter de espacio o un carácter
+  "#". Los caracteres deben formar un tablero de ajedrez:
+   # # # #
+  # # # #
+   # # # #
+  # # # #
+   # # # #
+  # # # #
+   # # # #
+  # # # #
+*/
+
+
 
 
 
