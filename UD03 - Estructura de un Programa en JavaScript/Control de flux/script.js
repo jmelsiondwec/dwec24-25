@@ -138,7 +138,16 @@
 
 
 
+let cadena = ""; // Comenzamos con una cadena vacía
 
+for (let i = 0; i < 7; i++) {
+  cadena += "#"; // En cada iteración, concatenamos un "#" a la cadena
+  console.log(cadena); // Mostramos la cadena
+}
+
+// for (let i = 1; i <= 7; i++) {
+//   console.log("#".repeat(i));
+// }
 
 
 
