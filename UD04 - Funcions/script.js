@@ -119,17 +119,73 @@
 // console.log(valor2());
 
 // Recursividad
-function exponencial(base, exponente) {
+// function exponencial(base, exponente) {
 
-  if(exponente == 0) {
-    return 1;
-  } else {
-    return base * exponencial(base, exponente - 1);
-  } 
-}
+//   if(exponente == 0) {
+//     return 1;
+//   } else {
+//     return base * exponencial(base, exponente - 1);
+//   } 
+// }
 
-console.log(exponencial(2, 3));
+// console.log(exponencial(2, 3));
 
 // Factorial de n: n! = n * (n-1) * (n-2)... * 1
 // Ej.: 4! = 4 * 3 * 2 * 1 = 24
 // Spoiler: 5! = 5 * 4!
+
+// Crecimiento de la funciones
+
+//imprimirInventarioGranja(2, 15);
+
+// function imprimirInventarioGranja(vacas, pollos) {
+//   let cadenaVaca = String(vacas);
+  
+//   while(cadenaVaca.length < 3) {
+//     cadenaVaca = "0" + cadenaVaca;
+//   }
+
+//   console.log(`${cadenaVaca} Vacas`);
+
+//   let cadenaPollo = String(pollos);
+  
+//   while(cadenaPollo.length < 3) {
+//     cadenaPollo = "0" + cadenaPollo;
+//   }
+
+//   console.log(`${cadenaPollo} Pollos`);
+// }
+
+function rellenarConCeros(numero, longitud) {
+  let cadenaNumero = String(numero);  
+  while(cadenaNumero.length < longitud) {
+    cadenaNumero = "0" + cadenaNumero;
+  }
+  return cadenaNumero;
+}
+
+function imprimirInventarioGranja(vacas, pollos, cerdos) {
+  console.log(`${rellenarConCeros(vacas, 5)} Vacas`);
+  console.log(`${rellenarConCeros(pollos, 5)} Pollos`);
+  console.log(`${rellenarConCeros(cerdos, 5)} Cerdos`);
+}
+
+imprimirInventarioGranja(7, 12, 26);
+
+// Math.min()
+// let a = Math.min(2,4);
+// console.log(a);
+//  Escribe una función que devuelva el mínimo de 3 números.
+
+// Ejercicio recursividad:
+/*  Podemos usar % para verificar si un número es par o impar
+    al usar el %2 para ver si es divisible por dos.
+    Existe otra manera de definir si un número es par o impar:
+    - 0 es PAR
+    - 1 es IMPAR
+    - N: su paridad es la misma que N - 2
+    Define la función recursiva esPar que corresponda a esta
+    descripción. La función debe aceptar un solo parámetro (número
+    entero positivo) y devolver un booleano.
+    Probar con 50 y 75.
+*/
