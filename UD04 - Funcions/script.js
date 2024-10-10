@@ -189,3 +189,6 @@ imprimirInventarioGranja(7, 12, 26);
     entero positivo) y devolver un booleano.
     Probar con 50 y 75.
 */
+
+
+// Kaprekar 
