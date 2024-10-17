@@ -141,28 +141,46 @@
 //   console.log(notas[nota]);
 // }
 
+// Desestruración de objetos
+// const persona = {
+//   nombre: "Pere",
+//   edad: 33
+// };
 
-// STAR WARS: Personajes y edades
-/*
-    Eres un joven padawan que colecciona datos sobre los héroes de Star Wars.
-    Se te proporcionan dos arrays: uno con los nombres de algunos de estos héroes
-    y otro con sus edades (en el episodio IV), con la indexación correspondiente
-    a su nombre en el otro array.
-*/
+// const {edad, nombre} = persona;
 
-const nombres = ["Luke", "Obi-Wan", "Yoda", "Leia"];
-const edades = [19, 57, 900, 19];
-
-/*
-    Escribe un programa que combine los datos de ambos arrays en un objeto y
-    los muestre por consola.
-    Calcula, además, la suma de las edades y muéstrala al final.
-*/
+// console.log(nombre, edad);
 
 
+// const nombre = "Toni";
+// const edad = "54";
 
+// const persona = {
+//   nombre,
+//   edad
+// };
 
+// console.log(persona.nombre, persona.edad);
 
+// Ordenar matrices con objetos
+const ciudades = [
+  {
+    municipio: "Zaragoza",
+    provincia: "Zaragoza"
+  },
+  {
+    municipio: "Ávila",
+    provincia: "Ávila"
+  },
+  {
+    municipio: "madrid",
+    provincia: "madrid"
+  }
+];
+
+ciudades.sort((a, b)=> a.municipio.localeCompare(b.municipio));
+
+console.log(ciudades);
 
 
 
