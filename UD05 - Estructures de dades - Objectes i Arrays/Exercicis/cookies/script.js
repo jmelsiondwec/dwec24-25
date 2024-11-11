@@ -20,7 +20,7 @@ function gestionaNombres() {
   // Creamos una variable para almacenar el contenido de la cookie de nombres.
   let contenidoNombres = '';
   // Recuperamos las posibles edades almacenados en la cookie.
-  let contenidoEdades = decodeURIComponent(document.cookie);
+  let contenidoEdades = '';//decodeURIComponent(document.cookie);
   // Comprobamos si se han recuperado los nombres.
   if(!misCookies) {
     console.log('No hay cookies...');
