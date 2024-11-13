@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242333;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.contenedor-pelicula {
+  margin: 20px 0;
+}
+
+.contenedor-pelicula select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+}
+
+.contenedor {
+  margin-bottom: 30px;
+  perspective: 1000px;
+}
+
+.asiento{
+  background-color: #444451;
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.asiento.seleccionado {
+  background-color: #6feaf6;
+}
+
+.asiento.ocupado {
+  background-color: #fff;
+}
+
+.asiento:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.asiento:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.asiento:not(.ocupado):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.leyenda .asiento:not(.ocupado):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.leyenda {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leyenda li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.leyenda li small {
+  margin-left: 2px;
+}
+
+.fila {
+  display: flex;
+}
+
+.pantalla {
+  background-color: #fff;
+  height: 70px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.texto {
+  margin: 5px 0;
+}
+
+p.texto span {
+  color: #6feaf6;
+}
