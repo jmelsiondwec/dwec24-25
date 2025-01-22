@@ -3,26 +3,24 @@ import { useState } from "react";
 import Titulo from "./components/Titulo";
 import Modal from "./components/Modal";
 import EventosLista from "./components/EventosLista";
-
-
+import EventoNuevoForm from "./components/EventoNuevoForm";
 
 function App() {
   const [muestraModal, setMuestraModal] = useState(false);
   const [mostrarEventos, setMostrarEventos] = useState(true);
   
-  const [eventos, setEventos] = useState([
-    { titulo: "examen dwec", id: 1 },
-    { titulo: "concurso programame", id: 2 },
-    { titulo: "fiesta de sant antoni", id: 3 },
-  ]);
+  const [eventos, setEventos] = useState([]);
+
+  const addEvento = (evento) => {
+    setEventos((eventosPrevios) => {
+      return [...eventosPrevios, evento];
+    })
+    setMuestraModal(false);
+  }
 
   const handleClick = (id) => {
     setEventos((eventosPrevios)=> eventosPrevios.filter((evento)=> id !== evento.id));
   };
-
-  const handleCerrar = () => {
-    setMuestraModal(false);
-  }
 
   const subTitulo = "Todos los eventos para Desarrollo de Aplicaciones Web";
 
@@ -40,12 +38,11 @@ function App() {
         </div>
       )}
       {mostrarEventos && <EventosLista eventos={eventos} handleClick={handleClick} />}
-      {muestraModal && <Modal handleCerrar={handleCerrar} destino={document.body}>
-        <h2>Stem Talks</h2>
-        <p>No te lo pierdas: 30 y 31 de enero</p>
+      {muestraModal && <Modal destino={document.body} esExterno={true}>
+        <EventoNuevoForm addEvento={addEvento} />
       </Modal>}
       <div>
-        <button onClick={() => setMuestraModal(true)}>Mostrar Modal</button>
+        <button onClick={() => setMuestraModal(true)}>Crear Nuevo Evento</button>
       </div>
     </div>
   );
