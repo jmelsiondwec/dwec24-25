@@ -1,0 +1,31 @@
+.asignatura-form {
+  width: 480px;
+  margin: 60px auto;
+}
+.asignatura-form label,
+.asignatura-form input {
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  border-radius: 4px;
+}
+.asignatura-form select {
+  display: block;
+  font-size: 1.2em;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px auto;
+  border: 2px solid #000;
+  border-radius: 4px;
+ }
+.asignatura-form button {
+  padding: 10px;
+  font-size: 16px;
+  flex-grow: 1;
+  width: 100%;
+}

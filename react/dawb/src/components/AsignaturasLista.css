@@ -1,0 +1,25 @@
+.asignatura-lista {
+  width: 480px;
+  margin: 60px auto;
+}
+.asignatura-lista ul {
+  padding: 0;
+}
+.asignatura-lista li {
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  padding: 10px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.05);
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 20px 0;
+}
+.asignatura-lista .filtros {
+  display: flex;
+  gap: 10px
+}
+.asignatura-lista button {
+  padding: 10px;
+  font-size: 16px;
+  flex-grow: 1;
+}
